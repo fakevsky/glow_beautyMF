@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Belleza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9f9;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .producto {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .info h3 {
+      margin: 0 0 10px;
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    .info p {
+      margin: 5px 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Belleza</h1>
+    <p>Explora nuestros productos de maquillaje y cuidado personal</p>
+  </header>
+
+  <section class="catalogo">
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x300?text=Base+Líquida" alt="Base líquida">
+      <div class="info">
+        <h3>Base Líquida HD</h3>
+        <p>Ideal para todo tipo de piel. Cobertura natural.</p>
+        <p><strong>Precio: $15.00</strong></p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x300?text=Crema+Hidratante" alt="Crema Hidratante">
+      <div class="info">
+        <h3>Crema Hidratante Facial</h3>
+        <p>Con ácido hialurónico y vitamina E.</p>
+        <p><strong>Precio: $22.50</strong></p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x300?text=Labial+Mate" alt="Labial Mate">
+      <div class="info">
+        <h3>Labial Mate Rojo</h3>
+        <p>Alta duración y textura suave.</p>
+        <p><strong>Precio: $9.99</strong></p>
+      </div>
+    </div>
+
+    <!-- Agrega más productos duplicando este bloque -->
+  </section>
+
+  <footer>
+    © 2025 Catálogo de Belleza | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
